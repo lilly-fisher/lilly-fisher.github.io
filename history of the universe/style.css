@@ -1,0 +1,139 @@
+body{
+	background-image: url("http://wallpapercave.com/wp/0vt7cA4.jpg");
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header{
+	height: 50px;
+	background-color: lightgrey;
+	opacity: .4; 
+	border: solid grey 1px;
+	margin: 15px 13px 10px 13px;
+	font-family: Courier, serif;
+	font-weight: bold;
+	font-size: 35px;
+	padding: 10px 25px 5px 35px;
+	width: 95%;
+}
+header i {
+	font-size: 13px;
+	color: #4747d1;
+	opacity: 1;
+}
+.horizontal{
+	float: right;
+	position: fixed;
+	width: 95%;
+	height: 8%;
+	background-color: #99ccff;
+	opacity: .7;
+	padding: 10px;
+	z-index: 4;
+	/*top:*/
+	/*left:;*/
+	//*add a media query*//
+}
+
+.horizontal li{
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+	//*add a media query*//
+}
+.rowtop{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 79px 10px 10px 0px;
+	padding: 10px;
+}
+
+#present{
+	padding-left: 13%;
+}
+.row{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 10px 0px;
+	padding: 10px;
+}
+.rowtop p {
+	display: inline-block;
+	padding: 15px 15px 3px 10px;
+	font-size: 15px;
+	height: 15%;
+}
+
+table{
+	font-size: 13px;
+}
+table td{
+	display: block;
+	padding: 3px 15px 3px 15px;
+	font-size: 13px;
+}
+table tr{
+	display: inline-block;
+}
+h2{
+	margin: 14px;
+}
+
+.vertical{
+	float: left;
+	width: 15%;
+	border: solid white 1px;
+	margin-top: 77px;
+}
+
+.vertical h1{
+	font-weight: bold;
+	color: white;
+	padding: 15px;
+}
+.vertical p {
+	padding: 15px;
+	margin: 35px 15px 35px 15px;
+}
+
+aside{
+	height: 100%;
+	width: 20%;
+	margin: 14px;
+	border: solid white 3px;
+	color: white;
+}
+
+footer{
+	clear: both;
+	height: 100px;
+	background-color: lightgrey;
+	border: solid grey 1px;
+	margin: 14px;
+}
+
+@media only screen and (max-width: 500px)
+	{
+		background-color: white;
+		text-color: black;
+	}
+
+#one{
+	float: left;
+}
+#two{
+	float: right;
+}
+
+#first{
+	float: left;
+}
+#second{
+	float: left;
+}
+#third{
+	float: right;
+}

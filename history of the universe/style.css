@@ -1,5 +1,6 @@
 body{
 	background-image: url("http://wallpapercave.com/wp/0vt7cA4.jpg");
+	background-size: cover;
 }
 .container{
 	width: 960px;
@@ -42,7 +43,22 @@ header i {
 	padding: 1% 2% 1% 2%;
 	//*add a media query*//
 }
-.rowtop{
+a.back-to-top {
+	width: 70px;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #99ccff;
+	border-radius: 30px;
+	padding: 20px;
+	opacity: .6;
+	color: white;
+	border: solid white;
+}
+
+#rowtop{
 	float: left;
 	width: 79%;
 	height: 15%;
@@ -53,14 +69,24 @@ header i {
 #present{
 	padding-left: 13%;
 }
-.row{
+#row2{
 	float: left;
 	width: 79%;
 	height: 15%;
 	margin: 5px 10px 10px 0px;
 	padding: 10px;
 }
-.rowtop p {
+
+#row3{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 10px 0px;
+	padding: 10px;
+}
+
+
+#rowtop p {
 	display: inline-block;
 	padding: 15px 15px 3px 10px;
 	font-size: 15px;
@@ -94,7 +120,7 @@ h2{
 	color: white;
 	padding: 15px;
 }
-.vertical p {
+.vertical li {
 	padding: 15px;
 	margin: 35px 15px 35px 15px;
 }
@@ -120,20 +146,3 @@ footer{
 		background-color: white;
 		text-color: black;
 	}
-
-#one{
-	float: left;
-}
-#two{
-	float: right;
-}
-
-#first{
-	float: left;
-}
-#second{
-	float: left;
-}
-#third{
-	float: right;
-}

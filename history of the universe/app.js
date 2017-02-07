@@ -19,4 +19,6 @@ $(document).ready(function () {
 	});
 
 /*.scrollTop() is how many pixels down fromt the top i am, if scrolltop > 500, some function//
-};
+};*/
+
+if (window)<500px, alert "The universe is too vast for your screen!"

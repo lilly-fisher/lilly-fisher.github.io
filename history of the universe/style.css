@@ -99,7 +99,7 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 
@@ -107,7 +107,7 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 
@@ -115,49 +115,49 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row5{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row6{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row7{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row8{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row9{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row10{
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 20px 0px;
+	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 
@@ -198,6 +198,9 @@ h2{
 	font-size: 18px;
 	font-weight: bold;
 	color: #99ccff;
+}
+.bottom p {
+	margin-top: 10px;
 }
 
 aside{

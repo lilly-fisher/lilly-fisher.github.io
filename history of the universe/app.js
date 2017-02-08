@@ -25,7 +25,7 @@ $('#rowtop').hide();
 //move horizontal timeline to bottom of page after half way down//
 $(window).scroll(function() {
 
-    if ($(this).scrollTop()>505)
+    if ($(this).scrollTop()>600)
      {
         $('.horizontal').fadeOut();
         $('.horizontalfooter').fadeIn();

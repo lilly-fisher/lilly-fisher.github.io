@@ -10,6 +10,8 @@ body{
 
 .timeline{
 	margin-top: 90px;
+	display: flex;
+	flex-direction: column;
 }
 #alert{
 	font-size: 30px;
@@ -43,8 +45,6 @@ header i {
 	opacity: .7;
 	z-index: 4;
 	margin-right: 25px;
-	/*top:*/
-	/*left:;*/
 	//*add a media query*//
 }
 
@@ -83,12 +83,27 @@ a.back-to-top {
 	color: white;
 	border: solid white;
 }
+#reverse{
+	width: 90px;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+	left: 25px;
+	bottom: 20px;
+	background: #99ccff;
+	border-radius: 30px;
+	padding: 15px;
+	opacity: .8;
+	color: white;
+	border: solid white;
+}
+
 
 #rowtop{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
-	margin: 0px 10px 10px 0px;
+	margin: 4px 10px 10px 0px;
 	padding: 10px;
 }
 
@@ -97,15 +112,15 @@ a.back-to-top {
 }
 #row2{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
-	margin: 0px 10px 20px 0px;
+	margin: 4px 10px 20px 0px;
 	padding: 10px;
 }
 
 #row3{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
@@ -113,49 +128,49 @@ a.back-to-top {
 
 #row4{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row5{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row6{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row7{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row8{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row9{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
 }
 #row10{
 	float: left;
-	width: 79%;
+	width: 95%;
 	height: 15%;
 	margin: 0px 10px 20px 0px;
 	padding: 10px;
@@ -189,15 +204,21 @@ h2{
 	width: 15%;
 	border: solid white 1px;
 	margin-top: 77px;
-	height: 100%
+	height: 100%;
 }
 
 .vertical li {
 	padding: 25px;
-	margin: 35px 15px 35px 15px;
+	margin: 30px 15px 10px 15px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #99ccff;
+	display: flex;
+	flex-direction: column;
+}
+.vertical ul{
+	display: flex;
+	flex-direction: column;
 }
 .bottom p {
 	margin-top: 10px;
@@ -207,6 +228,9 @@ aside{
 	margin: 14px;
 	border: solid white 3px;
 	color: white;
+}
+article{
+	margin: 14px;
 }
 
 footer{
@@ -219,6 +243,39 @@ footer{
 	text-align: center;
 	font-size: 11px;
 	opacity: .6;
+}
+/*alternate classes*/
+
+.timeline-switched{
+	margin-top: 90px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.timeline-switched aside{
+	float: right;
+	width: 95%;
+	height: 15%;
+	margin: 0px 10px 20px 0px;
+	padding: 10px;
+}
+.verticalSwitched{
+	float: left;
+	width: 15%;
+	border: solid white 1px;
+	margin-top: 77px;
+	height: 100%;
+}
+.verticalSwitched li{
+	padding: 25px;
+	margin: 35px 15px 10px 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #99ccff;
+}
+
+.verticalSwitched ul{
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 /*MEDIA QUERIES*/

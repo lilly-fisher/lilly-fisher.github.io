@@ -1,9 +1,12 @@
 
 $(document).ready(function () {
 //hide alert on default
-$('#alert').hide();
+function hide(){
+	$('#alert').hide()
+};
+hide();
 //hide elements before clicks
-$('#rowtop').hide();
+//$('#rowtop').hide();
 
 // Back to top button
   $(window).scroll(function() {
@@ -38,15 +41,15 @@ $(window).scroll(function() {
 
 
 //on click of vertical number, show the timeline item//
-$('#billion').click(function(e){
-	e.preventDefault();
-	$('#rowtop').show();
-});
+//$('#billion').click(function(e){
+	//e.preventDefault();
+	//$('#rowtop').show();
+//});
 
 //on second click, hide the timeline item//
 
 
-/*if (window)<500px, alert "T  universe is too vast for your screen!"*/
+/*if (window)<500px, show "The universe is too vast for your screen!"*/
 
 $(window).resize(function(){
 	if ($(window).width() < 878) { 
@@ -57,4 +60,24 @@ $(window).resize(function(){
 	});
 
 /*button to flip the order (present on top)*/
+
+$('#reverse').click(function(reverse){
+	if ($('section').hasClass('timeline')) {
+		reverse.preventDefault();
+		$('section').removeClass('timeline');
+		$('section').addClass('timeline-switched');
+	} //else {
+		//reverse.preventDefault()
+		//$('section').removeClass('timeline-switched');
+		//$('section').addClass('timeline');}
+});
+
+$('#reverse').click(function(verticalreverse){
+		if ($('article').hasClass('vertical')) {
+			verticalreverse.preventDefault();
+			$('article').removeClass('vertical');
+			$('article').addClass('verticalSwitched');
+		}
+});
+
 });

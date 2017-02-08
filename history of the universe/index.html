@@ -13,18 +13,18 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"></link>
-   	<link rel="stylesheet" type="text/css" href="interactive-planets/css/planetarium.css"></link>
    	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="interactive-planets/js/jquery.planetarium.js"</script>
     <script type="text/javascript" src="app.js"></script>
    </head>
 <body>
-	<div>
+	<div id="alert">The universe is too vast for your screen. Please expand your horizons!</div>
+	<div class="container">
 		<header id="header">The History of the Universe	<i><span class="sr-only">Loading...</span><span class="fa fa-cog fa-spin fa-3x fa-fw"></span></i><i><span class="sr-only">Loading...</span><span class="fa fa-cog fa-spin fa-3x fa-fw"></span></i></header>
+	
 		<aside class="horizontal">
 			<ul>
 				<li id="present">0</li>
-				<li><a href="#zone3">1</a></li>
+				<li>1</a></li>
 				<li>2</li>
 				<li>3</li>
 				<li>4</li>
@@ -43,8 +43,8 @@
 		<a class="back-to-top" href="">Top</a>
 		<aside class="vertical">
 			<ul>
-			<li id="billion"> <a href=""> Over A Billion Years </a></li> 
-			<li id="zone1"><a href=""> 100,000,000</li>
+			<li> <a id="billion" href=""> Over a Billion Years </a></li> 
+			<li id="zone1"><a href=""> 100,000,000</a></li>
 			<li id="zone2"><a href=""> 10,000,000 </a></li>
 			<li id="zone3"><a href="">1,000,000 </a></li>
 			<li id="zone4"><a href="">100,000 </a></li>
@@ -52,20 +52,32 @@
 			<li id="zone6"><a href=""> 1,000</a></li>
 			<li id="zone7"><a href="">100</a></li>
 			<li id="zone8"><a href="">10</a></li>
-			<li id="zone9"><<a href="">Single Years</a></li>
+			<li id="zone9"><a href="">Single Years</a></li>
 			</ul>
-			
 		</aside>
+		<div class="timeline">
 		<aside id="rowtop">
-		<table>
-			
-		</table>
-		<p>Continents Form (1.7)</p>
-		<i class="fa fa-moon-o" aria-hidden="true"> Forms(3.5)</i>  <i class="fa fa-globe" aria-hidden="true"> Forms (4.0)</i>  <p>Solar System Forms (4.5)</p>
-		<p>Atomic Evolution</p>
-		<p> </p>
-		<p> </p>
-		<p>Big Bang (13.6)</p>
+			<table>
+				<tr>
+					<td>Continents Form (1.7)</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-moon-o" aria-hidden="true"> Forms(3.5)</i></td> 
+					<td><i class="fa fa-globe" aria-hidden="true"> Forms (4.0)</i></td>  
+					<td>Solar System Forms (4.5)</td>
+				</tr>
+				<tr>
+					<td>Chemical Evolution</td>
+				</tr>
+				<tr>
+					<td>Atomic Evolution</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td>Big Bang (13.6)</td></tr>
+			</table>
 		</aside>
 		<aside id="row2">
 			<table>
@@ -75,7 +87,7 @@
 					<td>206 Triasic/Mammals</td>
 				</tr>
 				<tr>
-					<td> Permian Confers Insects</td>
+					<td>Permian Confers Insects</td>
 					<td>Carboniferous-Reptiles</td>
 					<td>Devoinian-Ambphibians, Forests</td>
 				</tr>
@@ -84,12 +96,177 @@
 					<td><i class="fa fa-snowflake-o" aria-hidden="true"></i></td>
 					<td>Ice Ages</td>
 				</tr>
+				<tr>
+					<td>Cynobacteria</td>
+					<td>Algae Quilts</td>
+					<td>Global Rifting</td>
+				</tr>
+				<tr>
+					<td>O2 rich atmosphere</td>
+					<td>Eukaryotes</td>
+					<td>Meiosis</td>
+					<td>Meitosis</td>
+				</tr>
+			</table>
+		</aside>
+		<aside id="row3">
+			<table>
+				<tr>
+					<td>Procounsel Apes</td>
+				</tr>
+				<tr>
+					<td>India hits Asia</td>
+					<td>Alps form</td>
+					<td>Prosimians</td>
+				</tr>
+				<tr> <td>Dinosaurs die off (63)</td></tr>
+				<tr>
+					<td><i class="fa fa-leaf" aria-hidden="true"></i></td>
+					<td>Flowering Plants</td>
+				</tr>
+				<tr>
+					<td>Atlantic Ocean Opens</td>
+				</tr>
+				<tr>
+					<td>Hardwood Forests</td>
+					<td>Primates</td>
+				</tr>
+			</table>
+			<p>35 ROCENE</p> <p></p><p> 53 PALEOCENE</p<p></p><p>63 CRETACEOUS</p>
+		</aside>
+		<aside id="row4">
+			<table>
+				<tr>
+					<td>Homo Habilis</td>
+					<td>Homo Erectus</td>
+				</tr>
+				<tr>
+					<td>Autralopithicus</td>
+					<td>Anamensis</td>
+					<td>A. Afarensis</td>
+					<td>A. Africanus</td>
+				</tr>
+				<tr>
+					<td>Mediterraean Sea dries out</td>
+				</tr>
+				<tr>
+					<td>Pan Pongo Gorilla</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td>Orangutans</td>
+					<td>Pongodae</td>
+					<td>Homindae</td>
+					<td>Gibbons</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr>
+					<td>Dryopithicus</td>
+					<td>Ramapithicus</td>
+					<td>Horses</td>
+					<td>Whales</td>
+				</tr>
+			</table>
+		</aside>
+		<aside id="row5">
+			<p>LEVALCOISIAN</p> <p>MINDER</p> <p>CLACTONIAN</p> <p>ACHEULIAN</p><p>ODOWAN</p>
+			<table>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td>Stick tools fossilized</td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td>BI facial Hand Axe</td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td>Fire</td></tr>
+
+			</table>
+		</aside>
+		<aside id="row6">
+			<p></p><p>Upper</p><p>PALEOLITHIC</p><p>Middle</p><p>STONE AGE</p><p>Lower</p>
+			<table>
+				<tr>
+					<td>Last Neanderthal</td>
+					<td>Cromagnon Cave Art</td>
+				</tr>
+				<tr>
+					<td>Hooks</td>
+					<td>Needles</td>
+				</tr>
+				<tr>
+					<td>Harpoons</td>
+					<td>Beads</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td>African Diffusion Begins</td>
+					<td>Homo Sapien Sapien</td>
+				</tr>
+				<tr>
+					<td>Neanderthal site (Croatia)</td>
+				</tr>
+			</table>
+		</aside>
+		<aside id="row7">
+			<table>
+				<tr>
+					<td>Roman Empire</td>
+					<td>Jesus</td>
+					<td>Buddha</td>
+					<td>Confucius</td>
+				</tr>
+				<tr>
+					<td>Greek Empire</td>
+					<td>Skis Cotton Bows</td>
+					<td>Beer Coins Iron</td>
+				</tr>
+				<tr>
+					<td>Pyramids</td>
+					<td>Loom wheel</td>
+					<td>Bronze</td>
+					<td>Stonehenge</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td></td>
+					<td>Homo Sapien Sapien</td>
+				</tr>
+				<tr>
+					<td>Neanderthal site (Croatia)</td>
+				</tr>
 			</table>
 		</aside>
 	</div>
-
+	</div>
+		<aside class="horizontalfooter">
+			<ul>
+				<li id="present">0</li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+			</ul>
+		</aside>
+		<footer>
+			This history written and designed by Hal and Lilly Fisher, respectively. We acknowledge that alternative historys and alternative universes might exist. 
+		</footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="interactive-planets/js/jquery.planetarium.js"</script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

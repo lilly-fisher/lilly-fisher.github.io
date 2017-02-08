@@ -1,8 +1,11 @@
 
 $(document).ready(function () {
+//hide alert on default
+$('#alert').hide();
+//hide elements before clicks
+$('#rowtop').hide();
 
-
-// Back to top
+// Back to top button
   $(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
 			$('.go-top').fadeIn(200);
@@ -18,7 +21,40 @@ $(document).ready(function () {
 	$('html, body').animate({scrollTop: 0}, 300);
 	});
 
-/*.scrollTop() is how many pixels down fromt the top i am, if scrolltop > 500, some function//
-};*/
 
-if (window)<500px, alert "The universe is too vast for your screen!"
+//move horizontal timeline to bottom of page after half way down//
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>505)
+     {
+        $('.horizontal').fadeOut();
+        $('.horizontalfooter').fadeIn();
+     }
+    else
+     {
+      $('.horizontal').fadeIn();
+     }
+ });
+
+
+//on click of vertical number, show the timeline item//
+$('#billion').click(function(e){
+	e.preventDefault();
+	$('#rowtop').show();
+});
+
+//on second click, hide the timeline item//
+
+
+/*if (window)<500px, alert "T  universe is too vast for your screen!"*/
+
+$(window).resize(function(){
+	if ($(window).width() < 878) { 
+		$('#alert').show();
+	}else{
+		$('#alert').hide();
+		}
+	});
+
+/*button to flip the order (present on top)*/
+});

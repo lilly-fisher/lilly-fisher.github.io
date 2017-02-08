@@ -3,16 +3,26 @@ body{
 	background-size: cover;
 }
 .container{
-	width: 960px;
-	margin: 0 auto;
+	padding-bottom: 50px;
+	width: 95%;
+	margin: 1% auto;
 }
 
+.timeline{
+	margin-top: 90px;
+}
+#alert{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 220px 150px 200px 100px;
+	color: #4747d1;
+}
 #header{
 	height: 50px;
 	background-color: lightgrey;
 	opacity: .4; 
 	border: solid grey 1px;
-	margin: 15px 13px 10px 13px;
+	margin: 15px 10px 10px 13px;
 	font-family: Courier, serif;
 	font-weight: bold;
 	font-size: 35px;
@@ -27,12 +37,12 @@ header i {
 .horizontal{
 	float: right;
 	position: fixed;
-	width: 95%;
-	height: 8%;
+	width: 88%;
+	height: 50px;
 	background-color: #99ccff;
 	opacity: .7;
-	padding: 10px;
 	z-index: 4;
+	margin-right: 25px;
 	/*top:*/
 	/*left:;*/
 	//*add a media query*//
@@ -43,6 +53,22 @@ header i {
 	padding: 1% 2% 1% 2%;
 	//*add a media query*//
 }
+.horizontalfooter{
+	width: 97%;
+	height: 50px;
+	background-color: #99ccff;
+	opacity: .7;
+	z-index: 4;
+  	bottom: 4;
+  	float: right;
+
+}
+
+.horizontalfooter li{
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+}
+
 a.back-to-top {
 	width: 70px;
 	height: 60px;
@@ -53,7 +79,7 @@ a.back-to-top {
 	background: #99ccff;
 	border-radius: 30px;
 	padding: 20px;
-	opacity: .6;
+	opacity: .8;
 	color: white;
 	border: solid white;
 }
@@ -62,7 +88,7 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 79px 10px 10px 0px;
+	margin: 0px 10px 10px 0px;
 	padding: 10px;
 }
 
@@ -73,7 +99,7 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 10px 0px;
+	margin: 5px 10px 20px 0px;
 	padding: 10px;
 }
 
@@ -81,14 +107,63 @@ a.back-to-top {
 	float: left;
 	width: 79%;
 	height: 15%;
-	margin: 5px 10px 10px 0px;
+	margin: 5px 10px 20px 0px;
 	padding: 10px;
 }
 
+#row4{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row5{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row6{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row7{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row8{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row9{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
+#row10{
+	float: left;
+	width: 79%;
+	height: 15%;
+	margin: 5px 10px 20px 0px;
+	padding: 10px;
+}
 
-#rowtop p {
+p {
 	display: inline-block;
-	padding: 15px 15px 3px 10px;
+	padding: 0px 35px 3px 45px;
 	font-size: 15px;
 	height: 15%;
 }
@@ -101,7 +176,8 @@ table td{
 	padding: 3px 15px 3px 15px;
 	font-size: 13px;
 }
-table tr{
+   
+table tr {
 	display: inline-block;
 }
 h2{
@@ -113,21 +189,18 @@ h2{
 	width: 15%;
 	border: solid white 1px;
 	margin-top: 77px;
+	height: 100%
 }
 
-.vertical h1{
-	font-weight: bold;
-	color: white;
-	padding: 15px;
-}
 .vertical li {
-	padding: 15px;
+	padding: 25px;
 	margin: 35px 15px 35px 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #99ccff;
 }
 
 aside{
-	height: 100%;
-	width: 20%;
 	margin: 14px;
 	border: solid white 3px;
 	color: white;
@@ -135,14 +208,37 @@ aside{
 
 footer{
 	clear: both;
-	height: 100px;
+	height: 40px;
 	background-color: lightgrey;
-	border: solid grey 1px;
-	margin: 14px;
+	border: white solid 1px;
+	margin: 10px 11px 0px 11px;
+	padding: 10px;
+	text-align: center;
+	font-size: 11px;
+	opacity: .6;
 }
 
-@media only screen and (max-width: 500px)
-	{
+/*MEDIA QUERIES*/
+@media  (max-width: 901px) {
+    body {
+        background-image: none;
+    }
+    #header{
+    	background-color:white;
+    	border: none;
+    	color: white;
+    }
+    .horizontal{
+    	background-color: white;
+    }
+    .vertical a {
+		color: white;
+    }
+    #header i {
+    	color: white;
+    }
+    a.back-to-top {
+		color: white;
 		background-color: white;
-		text-color: black;
-	}
+    }
+}

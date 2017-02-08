@@ -5,8 +5,6 @@ function hide(){
 	$('#alert').hide()
 };
 hide();
-//hide elements before clicks
-//$('#rowtop').hide();
 
 // Back to top button
   $(window).scroll(function() {
@@ -39,6 +37,8 @@ $(window).scroll(function() {
      }
  });
 
+//hide elements before clicks
+//$('#rowtop').hide();
 
 //on click of vertical number, show the timeline item//
 //$('#billion').click(function(e){

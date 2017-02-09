@@ -10,6 +10,7 @@ hide();
   $(window).scroll(function() {
 		if ($(this).scrollTop() > 100) {
 			$('.go-top').fadeIn(200);
+		} else {
 			$('.go-top').fadeIn(200);
 			}
 	});
